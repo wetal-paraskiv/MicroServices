@@ -20,8 +20,11 @@ public class InventoryService {
    private final InventoryRepository inventoryRepository;
 
    @Transactional(readOnly = true)
-   public List<InventoryResponse> isInStock(List<String> skuCodesList) {
-      log.info("Checking Inventory");
+   public List<InventoryResponse> isInStock(List<String> skuCodesList) throws InterruptedException {
+      log.info("...Checking Inventory...");
+//      log.info("...Pausing inventory service for 5 seconds...");
+//      Thread.sleep(10000);
+//      log.info("...Resuming inventory service...");
       return inventoryRepository.findBySkuCodeIn(skuCodesList).stream()
          .map(inventory ->
             InventoryResponse.builder()

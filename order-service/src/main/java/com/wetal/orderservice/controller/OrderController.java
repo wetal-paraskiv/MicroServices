@@ -3,6 +3,7 @@ package com.wetal.orderservice.controller;
 import com.wetal.orderservice.dto.OrderRequest;
 import com.wetal.orderservice.service.OrderService;
 import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
+import io.github.resilience4j.retry.annotation.Retry;
 import io.github.resilience4j.timelimiter.annotation.TimeLimiter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -11,6 +12,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.concurrent.CompletableFuture;
 
 @RestController
 @RequestMapping("/api/order")
@@ -22,13 +25,14 @@ public class OrderController {
    @ResponseStatus(HttpStatus.CREATED)
    @CircuitBreaker(name = "inventory", fallbackMethod = "fallbackMethod")
    @TimeLimiter(name = "inventory")
-   public String placeOrder(@RequestBody OrderRequest orderRequest) {
+   @Retry(name = "inventory")
+   public CompletableFuture<String> placeOrder(@RequestBody OrderRequest orderRequest) {
       String responseMessage = orderService.placeOrder(orderRequest);
-      return responseMessage;
+      return CompletableFuture.supplyAsync(() -> responseMessage);
    }
 
-   public String fallbackMethod(OrderRequest orderRequest, RuntimeException runtimeException) {
+   public CompletableFuture<String> fallbackMethod(OrderRequest orderRequest, RuntimeException runtimeException) {
       String message = "Oops, something went wrong, you have to repeat order after some time...";
-      return message;
+      return CompletableFuture.supplyAsync(() -> message);
    }
 }
