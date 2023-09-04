@@ -10,5 +10,5 @@ public class ApiGatewayApplication {
    public static void main(String[] args) {
       SpringApplication.run(ApiGatewayApplication.class, args);
    }
-   // https://www.youtube.com/watch?v=kn5h-GTjDY0&list=PLSVW22jAG8pBnhAdq9S8BpLnZ0_jVBj0c&index=6
+   // https://www.youtube.com/watch?v=5_EXMJbhLY4&list=PLSVW22jAG8pBnhAdq9S8BpLnZ0_jVBj0c&index=9
 }
