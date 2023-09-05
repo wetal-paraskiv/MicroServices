@@ -29,7 +29,6 @@ public class InventoryServiceApplication {
             .build();
          inventoryRepository.save(i1);
          inventoryRepository.save(i2);
-//         https://www.youtube.com/watch?v=8PJUnnhLXiI&list=PLSVW22jAG8pBnhAdq9S8BpLnZ0_jVBj0c&index=4
       };
    }
 

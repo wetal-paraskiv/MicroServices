@@ -1,0 +1,11 @@
+C:\Users\VPARASCH\IdeaProjects\MicroServicesProject\order-service\src\main\java\com\wetal\orderservice\service\OrderService.java
+C:\Users\VPARASCH\IdeaProjects\MicroServicesProject\order-service\src\main\java\com\wetal\orderservice\repositoty\OrderRepository.java
+C:\Users\VPARASCH\IdeaProjects\MicroServicesProject\order-service\src\main\java\com\wetal\orderservice\dto\OrderRequest.java
+C:\Users\VPARASCH\IdeaProjects\MicroServicesProject\order-service\src\main\java\com\wetal\orderservice\dto\OrderLineItemDto.java
+C:\Users\VPARASCH\IdeaProjects\MicroServicesProject\order-service\src\main\java\com\wetal\orderservice\OrderServiceApplication.java
+C:\Users\VPARASCH\IdeaProjects\MicroServicesProject\order-service\src\main\java\com\wetal\orderservice\dto\InventoryResponse.java
+C:\Users\VPARASCH\IdeaProjects\MicroServicesProject\order-service\src\main\java\com\wetal\orderservice\model\Order.java
+C:\Users\VPARASCH\IdeaProjects\MicroServicesProject\order-service\src\main\java\com\wetal\orderservice\webconfig\WebClientConfig.java
+C:\Users\VPARASCH\IdeaProjects\MicroServicesProject\order-service\src\main\java\com\wetal\orderservice\model\OrderLineItem.java
+C:\Users\VPARASCH\IdeaProjects\MicroServicesProject\order-service\src\main\java\com\wetal\orderservice\controller\OrderController.java
+C:\Users\VPARASCH\IdeaProjects\MicroServicesProject\order-service\src\main\java\com\wetal\orderservice\event\OrderPlacedEvent.java

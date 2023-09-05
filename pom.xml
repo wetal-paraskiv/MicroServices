@@ -76,6 +76,10 @@
                </from>
                <to>
                   <image>registry.hub.docker.com/wetali/${project.artifactId}</image>
+                  <auth>
+                     <username>wetali</username>
+                     <password>icGnFtPN#bzw7)+</password>
+                  </auth>
                </to>
             </configuration>
             <executions>

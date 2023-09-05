@@ -1,0 +1,8 @@
+com\wetal\inventoryservice\service\InventoryService.class
+com\wetal\inventoryservice\model\Inventory.class
+com\wetal\inventoryservice\repository\InventoryRepository.class
+com\wetal\inventoryservice\dto\InventoryResponse.class
+com\wetal\inventoryservice\dto\InventoryResponse$InventoryResponseBuilder.class
+com\wetal\inventoryservice\model\Inventory$InventoryBuilder.class
+com\wetal\inventoryservice\controller\InventoryController.class
+com\wetal\inventoryservice\InventoryServiceApplication.class

@@ -1,0 +1,10 @@
+com\wetal\productservice\controller\ProductController.class
+com\wetal\productservice\model\Product.class
+com\wetal\productservice\dto\ProductResponse$ProductResponseBuilder.class
+com\wetal\productservice\service\ProductService.class
+com\wetal\productservice\dto\ProductCreate.class
+com\wetal\productservice\dto\ProductCreate$ProductCreateBuilder.class
+com\wetal\productservice\ProductServiceApplication.class
+com\wetal\productservice\repository\ProductRepository.class
+com\wetal\productservice\model\Product$ProductBuilder.class
+com\wetal\productservice\dto\ProductResponse.class

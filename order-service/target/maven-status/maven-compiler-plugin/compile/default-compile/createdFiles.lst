@@ -1,0 +1,14 @@
+com\wetal\orderservice\dto\InventoryResponse$InventoryResponseBuilder.class
+com\wetal\orderservice\model\OrderLineItem.class
+com\wetal\orderservice\dto\InventoryResponse.class
+com\wetal\orderservice\service\OrderService.class
+com\wetal\orderservice\model\Order.class
+com\wetal\orderservice\event\OrderPlacedEvent.class
+com\wetal\orderservice\repositoty\OrderRepository.class
+com\wetal\orderservice\webconfig\WebClientConfig.class
+com\wetal\orderservice\model\OrderLineItem$OrderLineItemBuilder.class
+com\wetal\orderservice\controller\OrderController.class
+com\wetal\orderservice\dto\OrderRequest.class
+com\wetal\orderservice\dto\OrderLineItemDto.class
+com\wetal\orderservice\event\OrderPlacedEvent$OrderPlacedEventBuilder.class
+com\wetal\orderservice\OrderServiceApplication.class
